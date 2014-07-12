@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-016aa5f19fdd5efab48deb56654e9ed042f20823.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-3a22e053e9184be2bb9887e8be3228c1d8b5314e.jar"
+        jar="/Volumes/DATA/Eclipse/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-b43d4dbcfb8c223f0cb6ba514339c33a9c2c1bbf.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/KQXS/facebookSDK/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4055c4aae47e6e0d1431d85d4a8f9125ea9c3684"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.1-SNAPSHOT-with-sources-cf3ae687acc4f4105f576a364cdb26aae6062a6d.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/libs/universal-image-loader-1.9.1-SNAPSHOT-with-sources.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="acd361fd30f9c110a496540597d1e6e2a9d178bd"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-a3df99eb9b7c6a2b26993c8d83aa132175a5b6a5.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/KQXS/volleyFramework/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="40efdba93629bfcd36ea1d55c8071253a7b0d990"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-8257967364ec35481f7f5d58f16076221d0941f7.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/KQXS/tabSlidingShip/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="bcafb0c974c533ff1720b2b9f6029b84f7007691"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-528478c15007b61b4053017922d8e0a30024f873.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/KQXS/statusBarTintLib/unspecified/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8aa529106d52f6dd0da15708ba01282d7e39c3f3"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/khandroid-httpclient-4.2.3-f26fe3c2951df3873f966b3489de61402f87c94d.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/libs/khandroid-httpclient-4.2.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="833efd491363b9391340d073bff8d95c85ff7733"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-54cb72530ab5b4b459e4e9016686e728c0ca443a.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-4d6d7e9a35405bb58c47e80c35dd213bd8ad5201.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.0.77/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b6a82434c1eca686607867cd906bcc80ed987837"/>
+
+</pre-dex-items>

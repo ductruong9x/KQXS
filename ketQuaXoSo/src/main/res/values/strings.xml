@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Kết Quả Xổ Số-MB</string>
+    <string name="app_id">312406445575138</string>
+    <string name="member">Thành viên: %d</string>
+    <string name="ketqua">Kết quả</string>
+    <string name="content_login">Bạn cần kết nối với facebook để sử dụng phần mềm</string>
+    <string name="soicau">Soi cầu</string>
+    <string name="content_text">Click để xem  tử vi hôm nay</string>
+    <string name="caidat">Cài đặt</string>
+    <string name="moibanbe">Mời bạn bè</string>
+    <string name="rate">Đánh giá</string>
+    <string name="dev">Dev Info</string>
+    <string name="facebook">Cần đăng nhập Facebook để sử dụng</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="search">Tìm kiếm</string>
+
+    <color name="blue">#42A3FF</color>
+    <color name="blue_press">#214465</color>
+
+    <string name="thank">I really thank you when you evaluate my application ...</string>
+    <string name="title">Vote for my app :)</string>
+    <string name="content">You can vote for my application???</string>
+    <string name="ok">Ok</string>
+    <string name="novote">Do not show again</string>
+    <string name="later">Later</string>
+
+</resources>

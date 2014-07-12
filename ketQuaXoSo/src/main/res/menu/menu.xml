@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/abs__ic_search"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/invate"
+        android:title="@string/moibanbe">
+    </item>
+    <item
+        android:id="@+id/rate"
+        android:title="@string/rate">
+    </item>
+    <item
+        android:id="@+id/devinfo"
+        android:title="@string/dev">
+    </item>
+
+</menu>
