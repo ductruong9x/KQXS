@@ -32,6 +32,12 @@
         revision="20.0.0"
         sha1="40efdba93629bfcd36ea1d55c8071253a7b0d990"/>
     <item
+        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/StartAppInApp-2.4.1-4d4f85e16b9910c2204dd44e9dc1d997222cc0f3.jar"
+        jar="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/libs/StartAppInApp-2.4.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="12356c21c15e847fce0d686b7b2003be119816fe"/>
+    <item
         dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-8257967364ec35481f7f5d58f16076221d0941f7.jar"
         jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/KQXS/tabSlidingShip/unspecified/classes.jar"
         jumboMode="false"
@@ -55,11 +61,5 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
-    <item
-        dex="/Volumes/DATA/MyApp/KQXS/ketQuaXoSo/build/intermediates/pre-dexed/debug/classes-4d6d7e9a35405bb58c47e80c35dd213bd8ad5201.jar"
-        jar="/Volumes/DATA/MyApp/KQXS/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.0.77/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="b6a82434c1eca686607867cd906bcc80ed987837"/>
 
 </pre-dex-items>

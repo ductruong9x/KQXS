@@ -1,10 +1,5 @@
 package com.appvn.ketquaxoso.fragment;
 
-import java.util.ArrayList;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,8 +25,11 @@ import com.facebook.HttpMethod;
 import com.facebook.Request;
 import com.facebook.Response;
 import com.facebook.Session;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class SoiCauFragment extends Fragment {
 	private View mParent;
@@ -48,7 +46,6 @@ public class SoiCauFragment extends Fragment {
 	private ArrayList<ItemNewFeed> listNew = new ArrayList<ItemNewFeed>();
 	private boolean check = false;
 	private Session session;
-	private AdView adView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -71,8 +68,6 @@ public class SoiCauFragment extends Fragment {
 		tvMember = (TextView) header.findViewById(R.id.tvMember);
 		lvList = (ListView) mParent.findViewById(R.id.lvList);
 		loading = (ProgressBar) mParent.findViewById(R.id.loading);
-		adView = (AdView) mParent.findViewById(R.id.ad);
-		adView.loadAd(new AdRequest.Builder().build());
 		return mParent;
 	}
 

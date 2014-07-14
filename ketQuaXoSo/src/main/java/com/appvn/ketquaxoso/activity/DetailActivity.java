@@ -1,7 +1,5 @@
 package com.appvn.ketquaxoso.activity;
 
-import java.util.Arrays;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -28,11 +26,10 @@ import com.facebook.Session.StatusCallback;
 import com.facebook.SessionState;
 import com.facebook.widget.WebDialog;
 import com.facebook.widget.WebDialog.OnCompleteListener;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
+import com.startapp.android.publish.StartAppAd;
+
+import java.util.Arrays;
 
 public class DetailActivity extends Activity {
 
@@ -40,10 +37,9 @@ public class DetailActivity extends Activity {
 	private String URL_IMAGE = "";
 	private String link = "";
 	private ImageButton btnBack, btnShare;
-	private AdView adView;
+    private StartAppAd startAppAd;
 	private ProgressDialog dialog;
-	private InterstitialAd interstitialAd;
-	private String UNIT_ID="ca-app-pub-1857950562418699/1374631568";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -57,9 +53,8 @@ public class DetailActivity extends Activity {
 			tintManager.setNavigationBarTintResource(R.color.app_color);
 		}
 		setContentView(R.layout.detail_activity);
-		interstitialAd=new InterstitialAd(this);
-		interstitialAd.setAdUnitId(UNIT_ID);
-		interstitialAd.loadAd(new AdRequest.Builder().build());
+        startAppAd=new StartAppAd(this);
+        startAppAd.loadAd();
 		dialog = new ProgressDialog(this);
 		dialog.setMessage("Sharing...");
 		imgFull = (FadeInNetworkImageView) findViewById(R.id.imgFull);
@@ -76,7 +71,7 @@ public class DetailActivity extends Activity {
 				// TODO Auto-generated method stub
 				
 				finish();
-				interstitialAd.show();
+
 				
 			}
 		});
@@ -140,17 +135,7 @@ public class DetailActivity extends Activity {
 			}
 		});
 
-		adView = (AdView) findViewById(R.id.ad);
-		adView.loadAd(new AdRequest.Builder().build());
-		adView.setAdListener(new AdListener() {
-			
-			@Override
-			public void onAdOpened() {
-				// TODO Auto-generated method stub
-				super.onAdOpened();
-				adView.destroy();
-			}
-		});
+
 	}
 
 	private void shareWeb() {
@@ -222,7 +207,7 @@ public class DetailActivity extends Activity {
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		interstitialAd.show();
+        startAppAd.onBackPressed();
 		super.onBackPressed();
 	}
 }

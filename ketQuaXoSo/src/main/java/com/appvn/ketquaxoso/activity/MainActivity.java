@@ -33,11 +33,10 @@ import com.facebook.FacebookOperationCanceledException;
 import com.facebook.Session;
 import com.facebook.widget.WebDialog;
 import com.facebook.widget.WebDialog.OnCompleteListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
+import com.startapp.android.publish.StartAppAd;
+import com.startapp.android.publish.StartAppSDK;
 import com.viewpagerindicator.PagerSlidingTabStrip;
-
 import java.util.Calendar;
 
 @SuppressLint("NewApi")
@@ -46,9 +45,9 @@ public class MainActivity extends FragmentActivity {
 	private PagerSlidingTabStrip mIndicator;
 	private ViewPagerHomeAdapter adapter;
 	private ViewPager vpMain;
-	private InterstitialAd interstitialAd;
-	private String UNIT_ID="ca-app-pub-1857950562418699/1374631568";
-
+    private String dev_id="108403113";
+    private String app_id="207030303";
+    private StartAppAd startAppAd;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -60,7 +59,11 @@ public class MainActivity extends FragmentActivity {
 			tintManager.setStatusBarTintResource(R.color.app_color);
 			tintManager.setNavigationBarTintResource(R.color.app_color);
 		}
+        StartAppSDK.init(this,dev_id,app_id,true);
+        StartAppAd.showSplash(this,savedInstanceState);
 		setContentView(R.layout.main);
+        startAppAd=new StartAppAd(this);
+        startAppAd.loadAd();
 		pushLocal();
 
 		actionBar = getActionBar();
@@ -68,10 +71,8 @@ public class MainActivity extends FragmentActivity {
 		actionBar.setTitle(Html.fromHtml("<font color='#ffffff' size='25'>"
 				+ getString(R.string.app_name) + "</font>"));
 		actionBar.setBackgroundDrawable(new ColorDrawable(Color
-				.parseColor("#950a11")));
-		interstitialAd=new InterstitialAd(this);
-		interstitialAd.setAdUnitId(UNIT_ID);
-		interstitialAd.loadAd(new AdRequest.Builder().build());
+				.parseColor("#e51c23")));
+
 		
 		
 		vpMain = (ViewPager) findViewById(R.id.vpMain);
@@ -325,7 +326,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		interstitialAd.show();
+        startAppAd.onBackPressed();
 		super.onBackPressed();
 	}
 }

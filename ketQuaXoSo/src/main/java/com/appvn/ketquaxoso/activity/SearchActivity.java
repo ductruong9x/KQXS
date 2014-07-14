@@ -1,7 +1,5 @@
 package com.appvn.ketquaxoso.activity;
 
-import java.util.ArrayList;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,9 +18,10 @@ import com.appvn.ketquaxoso.R;
 import com.appvn.ketquaxoso.adapter.ItemAdapter;
 import com.appvn.ketquaxoso.database.DatabaseHelper;
 import com.appvn.ketquaxoso.model.ItemNewFeed;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
+import com.startapp.android.publish.StartAppAd;
+
+import java.util.ArrayList;
 
 public class SearchActivity extends Activity {
 	private ActionBar actionBar;
@@ -32,8 +31,7 @@ public class SearchActivity extends Activity {
 	private ListView lvSearch;
 	private DatabaseHelper database;
 	private ProgressBar loading;
-	private AdView adView;
-
+    private StartAppAd startAppAd;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -46,18 +44,18 @@ public class SearchActivity extends Activity {
 			tintManager.setNavigationBarTintResource(R.color.app_color);
 		}
 		setContentView(R.layout.activity_main);
+        startAppAd=new StartAppAd(this);
+        startAppAd.loadAd();
 		actionBar = getActionBar();
 		actionBar.setIcon(R.drawable.ic_launcher);
 		actionBar.setTitle(Html.fromHtml("<font color='#ffffff' size='25'>"
-				+ getString(R.string.app_name) + "</font>"));
+                + getString(R.string.app_name) + "</font>"));
 		actionBar.setBackgroundDrawable(new ColorDrawable(Color
-				.parseColor("#950a11")));
+                .parseColor("#e51c23")));
 		actionBar.setHomeButtonEnabled(true);
 		actionBar.setDisplayShowHomeEnabled(true);
 		lvSearch = (ListView) findViewById(R.id.lvList);
 		loading = (ProgressBar) findViewById(R.id.loading);
-		adView = (AdView) findViewById(R.id.ad);
-		adView.loadAd(new AdRequest.Builder().build());
 		Intent intent = getIntent();
 		time = intent.getStringExtra("TIME_SEARCH");
 
@@ -84,4 +82,9 @@ public class SearchActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+    @Override
+    public void onBackPressed() {
+        startAppAd.onBackPressed();
+        super.onBackPressed();
+    }
 }
